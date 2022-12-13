@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  align-self: center;
+  font-size: bold;
+}
+
+.navButton {
+  color: rgb(73, 152, 188);
+  font-weight: bold;
+
+}
+.navButton:hover {
+  cursor: pointer;
+}
