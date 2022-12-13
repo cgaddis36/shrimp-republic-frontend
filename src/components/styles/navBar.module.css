@@ -8,11 +8,9 @@
   align-self: center;
   font-size: bold;
 }
-
 .navButton {
-  color: rgb(73, 152, 188);
+  color: rgb(146, 228, 252);
   font-weight: bold;
-
 }
 .navButton:hover {
   cursor: pointer;
