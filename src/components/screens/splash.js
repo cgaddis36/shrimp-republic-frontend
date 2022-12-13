@@ -8,6 +8,7 @@ import redGrouper from '../images/red-grouper-colored.png'
 function Splash({currentUser}) {
   return(
     <div className={styles.main}>
+      <video src={"https://fishing-video.s3.amazonaws.com/beachFlyFish.mp4"} autoPlay loop muted className={styles.maxFly}/>
       <Header
         active={'splash'}
         currentUser={currentUser} 
@@ -30,6 +31,15 @@ function Splash({currentUser}) {
           className={styles.crabby}
           />
       </div>
+      <div className={styles.middy}>
+        <div className={styles.midButton}>
+          Soft Goods
+        </div>
+        <div className={styles.midButton}>
+          Hard Goods
+        </div>
+
+      </div>
       <div className={styles.lowRow}>
         <div className={styles.textContainer2}>
           <div className={styles.text3}>
@@ -48,7 +58,6 @@ function Splash({currentUser}) {
           className={styles.redGrouper}
           />
       </div>
-
     </div>
   )
 }
