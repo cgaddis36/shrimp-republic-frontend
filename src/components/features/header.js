@@ -3,7 +3,6 @@ import NavBar from './navBar'
 import styles from '../styles/header.module.css'
 
 function Header({
-  currentUser,
   active
 }){
   return(
@@ -15,7 +14,6 @@ function Header({
         </div>
       </div>
       <NavBar 
-        currentUser={currentUser}
         active={active}
         />
     </div>
