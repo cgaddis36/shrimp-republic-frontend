@@ -157,7 +157,7 @@
   transform: rotate(240deg);
   margin-right: 2vw;
   margin-top: 2.25vw;
-  animation: fly 2s infinite;  
+  /* animation: fly 2s infinite;   */
 }
 .flyShrimp {
   opacity: .8;
@@ -188,7 +188,8 @@
 .maxFly {
   position: absolute;
   object-fit: cover;
-  height: max-content;
+  min-height: 100vh;
+  width: 100vw;
   opacity: .8;  
   animation: fade-in 6.4s infinite;
 }
@@ -200,11 +201,13 @@
   opacity: .6;
   text-shadow: 2px 2px rgb(107, 149, 143);
   color: rgb(248, 241, 168);
+  padding: 1vw;
 }
 .midButton:hover {
   color:rgb(240, 98, 129);
   cursor: pointer;
   border-color: rgb(248, 241, 168);
+  
 }
 .middy {
   align-self: center;
@@ -256,14 +259,14 @@
   text-align: left;
   font-size: 8vw; 
   color: rgb(146, 228, 252);
-  text-shadow: 2px 2px rgb(107, 149, 143);
+  text-shadow: 4px 4px rgb(107, 149, 143);
 }
 .text2 {
   color: rgb(107, 149, 143);
   color: rgb(240, 98, 129);
   font-weight: bold;
   font-size: 2.5vw;
-  text-shadow: 1px 1px rgb(248, 241, 168);
+  text-shadow: 2px 2px rgb(248, 241, 168);
 }
 .text3 {
   color: rgb(165, 240, 229);
