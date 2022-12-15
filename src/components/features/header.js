@@ -8,8 +8,11 @@ function Header({
 }){
   return(
     <div className={styles.header}>
-      <div className={styles.logoText}>
-        Shrimp Republic
+      <div 
+        className={styles.logoContainer}>
+        <div className={styles.logoText}>
+          Shrimp Republic
+        </div>
       </div>
       <NavBar 
         currentUser={currentUser}
