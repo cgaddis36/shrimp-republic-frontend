@@ -23,7 +23,7 @@ function Splash({currentUser}) {
             Shrimp Republic
           </div>
           <div className={styles.text2}>
-            Deep Fried Dry Goods Since 2022 
+            Deep Fried Dry Goods Est. 2022 
           </div>
         </div>
         <img 
