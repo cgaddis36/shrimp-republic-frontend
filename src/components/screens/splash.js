@@ -5,13 +5,12 @@ import shrimpFlyfish from '../images/shrimp-flyfish-logo-floralhat.png'
 import floralCrab from '../images/floral-crab-coral-outline.png'
 import redGrouper from '../images/red-grouper-colored.png'
 
-function Splash({currentUser}) {
+function Splash({}) {
   return(
     <div className={styles.main}>
       <video src={"https://fishing-video.s3.amazonaws.com/beachFlyFish.mp4"} autoPlay loop muted className={styles.maxFly}/>
       <Header
-        active={'splash'}
-        currentUser={currentUser} 
+        active={'splash'} 
         />
       <div className={styles.midRow}>
         <img 
