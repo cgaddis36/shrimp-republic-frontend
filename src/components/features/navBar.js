@@ -24,6 +24,12 @@ function NavBar({
         >
         Hard Goods
       </div>
+      <div 
+        className={active === 'cart' ? styles.active : styles.navButton}
+        onClick={() => swapPath('/cart')}
+        >
+        Cart
+      </div>
       {
         currentUser !== '' ?
         <div
