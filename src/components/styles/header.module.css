@@ -5,6 +5,19 @@
   align-content: center;
   position: relative;
 }
+.logo {
+  height: 7vh;
+  width: 7vh;
+  padding-left: 1vh;
+  padding-top: 1vh;
+  border-radius: 15px;
+  object-position: left 55%;
+  overflow: hidden;
+}
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+}
 .logoText {
   color: rgb(43, 189, 167);
   font-weight: bold;
