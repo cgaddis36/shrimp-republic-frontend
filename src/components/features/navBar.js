@@ -1,11 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from '../styles/navBar.module.css'
+import { selectUser } from '../reducers/user/userSlice'
+import { useSelector } from 'react-redux'
 
 function NavBar({
-  active,
-  currentUser
+  active
 }) {
+  const user = useSelector(selectUser)
   const navigate = useNavigate()
   const swapPath = (path) => {
     navigate(path)
@@ -31,7 +33,7 @@ function NavBar({
         Cart
       </div>
       {
-        currentUser !== '' ?
+        user !== '' ?
         <div
           className={active === 'profile' ? styles.active : styles.navButton}
           onClick={() => swapPath('/profile')} 
