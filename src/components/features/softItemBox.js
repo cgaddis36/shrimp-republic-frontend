@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/softItemBox.module.css'
+import redGrouper from '../images/red-grouper-colored.png'
 
 function SoftItemBox({
   id,
@@ -10,26 +11,31 @@ function SoftItemBox({
 }) {
   return (
     <div className={styles.softContainer}>
-      <div className={styles.name}>
-        {name}
-      </div>
-      <div className={styles.description}>
-        {description}
-      </div>
-      <div className={styles.price}>
-        {"$" + price}
-      </div>
-      {
-        discount > 0 ? 
-        <div className={styles.discount}>
-          {discount}
-        </div> 
-        :
-        null
-      }
-      <div className={styles.clickView}>
-        Click to View
-      </div>
+      <img 
+        src={redGrouper}
+        className={styles.productImage}
+        />
+        <div className={styles.name}>
+          {name}
+        </div>
+      
+        <div className={styles.priceRow}>
+          <div className={styles.price}>
+            {"Price: $" + price}
+          </div>
+          <div className={styles.clickView}>
+            Click to View
+          </div>
+        </div>
+
+        {
+          discount > 0 ? 
+          <div className={styles.discount}>
+            {discount}
+          </div> 
+          :
+          null
+        }
     </div>
   )
 }
