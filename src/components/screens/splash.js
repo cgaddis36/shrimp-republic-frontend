@@ -4,8 +4,11 @@ import Header from '../features/header'
 import shrimpFlyfish from '../images/shrimp-flyfish-logo-floralhat.png'
 import floralCrab from '../images/floral-crab-coral-outline.png'
 import redGrouper from '../images/red-grouper-colored.png'
+import { useNavigate } from 'react-router-dom' 
 
 function Splash({}) {
+  const navigate = useNavigate()
+
   return(
     <div className={styles.main}>
       <video src={"https://fishing-video.s3.amazonaws.com/beachFlyFish.mp4"} autoPlay loop muted className={styles.maxFly}/>
@@ -31,10 +34,16 @@ function Splash({}) {
           />
       </div>
       <div className={styles.middy}>
-        <div className={styles.midButton}>
+        <div 
+          className={styles.midButton}
+          onClick={()=>navigate('/softgoods')}
+          >
           Soft Goods
         </div>
-        <div className={styles.midButton}>
+        <div 
+          className={styles.midButton}
+          onClick={()=>navigate('/hardgoods')}
+          >
           Hard Goods
         </div>
 

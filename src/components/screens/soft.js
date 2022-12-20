@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import styles from '../styles/soft.module.css'
 import FindItems from '../apiCalls/findItems.js'
+import SoftItemBox from '../features/softItemBox.js'
+import Header from '../features/header'
 
 function Soft({
   
@@ -13,10 +15,37 @@ function Soft({
   }, [])
   return (
     <div className={styles.mainContainer}>
+      <Header 
+        active={'soft'}
+        />
+ 
+        <div className={styles.filters}>
+          <div className={styles.filter}>
+            Shirts 
+          </div>
+          <div className={styles.filter}>
+            Hoodies 
+          </div>
+          <div className={styles.filter}>
+            Hats
+          </div>
+        </div>
       <div className={styles.items}>
-        
+        {
+          !items.length ?
+          <div className={styles.loading}>
+          </div> 
+          : 
+          items.map((item, index)=> 
+            <SoftItemBox
+              key={index}
+              name={item.name}
+              description={item.description}
+              price={item.price}  
+              discount={item.discount}  
+              />)
+        }
       </div>
-
     </div>
   )
 }
