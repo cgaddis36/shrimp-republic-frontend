@@ -21,7 +21,7 @@
 .logoText {
   color: rgb(43, 189, 167);
   font-weight: bold;
-  font-size: large;
+  font-size: 3vh;
   margin-left: 1vw;
   align-self: center;
 }
