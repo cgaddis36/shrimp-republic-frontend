@@ -15,12 +15,25 @@ function Soft({
   }, [])
   return (
     <div className={styles.mainContainer}>
-      <Header />
+      <Header 
+        active={'soft'}
+        />
+ 
+        <div className={styles.filters}>
+          <div className={styles.filter}>
+            Shirts 
+          </div>
+          <div className={styles.filter}>
+            Hoodies 
+          </div>
+          <div className={styles.filter}>
+            Hats
+          </div>
+        </div>
       <div className={styles.items}>
         {
           !items.length ?
           <div className={styles.loading}>
-
           </div> 
           : 
           items.map((item, index)=> 
