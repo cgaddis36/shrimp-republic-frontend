@@ -1,14 +1,17 @@
-.mainContainer {
+.filters {
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  margin-bottom: 1vh;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50vw;
+  color:rgb(218, 234, 248);
+  margin-top: 1vh;
+  font-size: 2vh;
 }
 
 .items {
   display: flex;
-  flex-direction: column;
-  width: 60vw;
+  flex-direction: row;
+  width: 97vw;
   background-color: rgb(218, 234, 248);
   align-self: center;
   justify-content: center;
@@ -16,8 +19,16 @@
   align-content: center;
   text-align: left;
   margin-top: 1vh;
-  border: 5px solid rgb(113, 211, 233);
+  border: 2px solid rgb(113, 211, 233);
   border-color: rgb(43, 189, 167);
   border-radius: 5px;
   padding: 1vw;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-bottom: 1vh;
 }
